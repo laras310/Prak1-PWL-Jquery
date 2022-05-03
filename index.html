@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.0.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Prak 1 PWL</title>
+</head>
+<body>
+    <header>
+        <h3>Pemesanan Produk</h3>
+        <hr>
+    </header>
+
+    <div class="container">
+        <h1 id="nama"></h1>
+        <h3 id="list-produk"></h3>
+
+        <div class="card-wrap">
+            <div class="card">
+                <h2>Data</h2>
+                
+                <form id="myform" action="" onsubmit="return false">
+                    <div class="pad-right">
+                        <span>Nama</span><br>
+                        <input type="text" id="nama-pemesan" class="full-width" required>
+                    </div>
+                    <span>Pilih produk</span>
+                    
+                    <div class="clearfix cont2">
+                        <div class="left">
+                            <label for="produk-1">Produk</label><br>
+                            <select id="produk-1" required>
+                                <option value="" hidden selected>Pilih produk</option>
+                                <option value="Jet Tempur">Jet Tempur</option>
+                                <option value="Rudal Hipersonik">Rudal Hipersonik</option>
+                                <option value="Infinity Stone">Infinity Stone</option>
+                                <option value="Nuklir Hiroshima">Nuklir Hiroshima</option>
+                            </select>
+                            <br>
+                             
+                        </div>
+
+                        <div class="left cont3">
+                            <label for="jumlah-1" style="padding-left: 5px;">Jumlah</label><br>
+                            <input type="number" id="jumlah-1" class="jumlah" required><br>
+                        </div>  
+                        
+                        <!-- <div class="left pd-top">
+                            <button class="btn-3" id="btn-del-1"><i class="fa fa-minus-circle" aria-hidden="true"></i></button>
+                        </div> -->
+                    </div>
+                    <button id="btn-tambah" class="btn-1 full-width">Tambah Produk</button><br>
+                    <button id="btn-pesan" class="btn-2 full-width">Pesan</button>
+                        
+                </form>
+                
+                
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
